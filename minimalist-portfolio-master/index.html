@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JJ REECE _ Just_Say_Reece | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">JJR</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle">
+      <i class="fas fa-moon"></i>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>John Justin Recella</span></h1>
+      <p>Developer • Researcher • Innovator</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Me -->
+<section class="section" id="about">
+  <div class="container glass about-container">
+    <div class="about-photo">
+      <img src="images/RECELLA_JOHN JUSTIN.jpg" alt="JJ">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hi! I’m <strong>John Justin Recella</strong>, a motivated and goal-oriented Computer Engineering student at Marinduque State University with a strong foundation in programming, circuit design, and embedded systems. Experienced in developing projects that integrate hardware and software for automation and real-world applications. Skilled in teamwork, problem-solving, and adapting to new technologies. Passionate about creating innovative and practical solutions that address societal needs while continuously expanding technical expertise. 
+      </p>
+    </div>
+  </div>
+</section>
+
+
+   <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container glass">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fas fa-code"></i> HTML / CSS / JavaScript</div>
+        <div class="skill-card"><i class="fab fa-python"></i> Python & C++</div>
+        <div class="skill-card"><i class="fas fa-microchip"></i> Embedded Systems</div>
+        <div class="skill-card"><i class="fas fa-lightbulb"></i> Problem Solving</div>
+        <div class="skill-card"><i class="fas fa-users"></i> Team Collaboration</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+<!-- Projects -->
+<section class="section" id="projects">
+  <div class="container glass">
+    <h2>Projects & Portfolio</h2>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="images/Smart_Packaging_System.png" alt="Sorti-Pack">
+        </div>
+        <h3>Sorti-Pack</h3>
+        <p>A web application for monitoring the distribution of relief packs to make it fair.</p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="images/tissue_dispenser.jpg" alt="Smart Tissue Dispenser">
+        </div>
+        <h3>Smart Tissue Dispenser</h3>
+        <p>Smart IoT and embedded solution for easier and non-touchable getting of tissue paper.Smart Tissue Dispenser that uses embedded technology to provide automated, hygienic, and efficient tissue dispensing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Resume -->
+  <section class="section" id="resume">
+    <div class="container glass center">
+      <h2>Resume / CV</h2>
+      <p>You can view or download my resume below:</p>
+      <a href="resume.pdf" class="btn" target="_blank">
+        <i class="fas fa-file-pdf"></i> Download Resume (PDF)
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container glass">
+      <h2>Contact</h2>
+      <p>If you’d like to collaborate or just say hi, feel free to reach out:</p>
+      <ul class="contact-list">
+        <li><i class="fas fa-envelope"></i> <a href="mailto:recellajohnjustin412@gmail.com">recellajohnjustin412@gmail.com</a></li>
+        <li><i class="fab fa-linkedin"></i> <a href="#">https://www.linkedin.com/in/john-justin-recella-664738382/</a></li>
+        <li><i class="fab fa-github"></i> <a href="#">https://github.com/john-justin-ree</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Just_Say_Reece | Built with ❤️ for GitHub Portfolio</p>
+  </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('light-theme');
+      const icon = toggleBtn.querySelector('i');
+
+      if (body.classList.contains('light-theme')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+    });
+  </script>
+</body>
+</html>
